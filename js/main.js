@@ -15,6 +15,8 @@ const I18N = {
     "hero.tagline": "Cientista de Dados, Pesquisador e Engenheiro apaixonado por transformar dados e visão computacional em soluções reais.",
     "hero.cta1": "Ver minha trajetória",
     "hero.cta2": "Entrar em contato",
+    "hero.cta3": "Baixar PDF",
+    "download": "Baixar currículo em PDF",
     "about.title": "Sobre mim",
     "about.sub": "Cientista de Dados · Pesquisador · Aprendizado Profundo e Visão Computacional",
     "education.title": "Formação",
@@ -64,6 +66,8 @@ const I18N = {
     "hero.tagline": "Data Scientist, Researcher and Engineer passionate about turning data and computer vision into real solutions.",
     "hero.cta1": "See my journey",
     "hero.cta2": "Get in touch",
+    "hero.cta3": "Download PDF",
+    "download": "Download resume as PDF",
     "about.title": "About me",
     "about.sub": "Data Scientist · Researcher · Deep Learning and Computer Vision",
     "education.title": "Education",
@@ -286,6 +290,12 @@ function t(key) {
 function applyLabels() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    el.setAttribute("aria-label", t(el.dataset.i18nAria));
+  });
+  document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+    el.setAttribute("title", t(el.dataset.i18nTitle));
   });
   document.title = t("title");
   document.documentElement.lang = state.lang === "pt" ? "pt-BR" : "en";

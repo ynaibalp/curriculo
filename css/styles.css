@@ -435,6 +435,22 @@ ul {
   font-size: 0.85rem;
 }
 
+.btn-download {
+  border-color: var(--accent-ring);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+.btn-download:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 24px var(--glow);
+}
+
+.download-pdf-btn {
+  color: var(--accent);
+  border-color: var(--accent-ring);
+}
+
 .btn-block {
   width: 100%;
 }
@@ -1340,6 +1356,7 @@ ul {
   .nav-actions,
   .menu-btn,
   .icon-btn,
+  .download-pdf-btn,
   .hero-cta,
   .back-top,
   .skill-ico,
