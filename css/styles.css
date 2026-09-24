@@ -468,15 +468,9 @@ ul {
   aspect-ratio: 1;
 }
 
-@property --ring-angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0deg;
-}
-
 @keyframes ring-spin {
   to {
-    --ring-angle: 360deg;
+    transform: rotate(360deg);
   }
 }
 
@@ -490,9 +484,22 @@ ul {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: conic-gradient(from var(--ring-angle), #10b981, #4ade80, #a3e635, #2dd4bf, #10b981);
+  background: conic-gradient(from 180deg, #10b981, #4ade80, #a3e635, #2dd4bf, #10b981);
   animation: ring-spin 3s linear infinite;
   box-shadow: 0 24px 60px var(--glow);
+}
+
+.avatar-ring::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff, #a3e635);
+  box-shadow: 0 0 14px 4px rgba(163, 230, 53, 0.85);
+  transform: translateY(-50%);
 }
 
 .avatar-ring::after {
@@ -500,8 +507,8 @@ ul {
   position: absolute;
   inset: -20%;
   border-radius: 50%;
-  border: 1.5px dashed var(--accent-ring);
-  animation: counter-spin 18s linear infinite;
+  border: 2px dashed var(--accent-ring);
+  animation: counter-spin 8s linear infinite;
 }
 
 .avatar-media::before {
@@ -521,9 +528,9 @@ ul {
 
 .avatar-img {
   position: absolute;
-  inset: 11px;
-  width: calc(100% - 22px);
-  height: calc(100% - 22px);
+  inset: 13px;
+  width: calc(100% - 26px);
+  height: calc(100% - 26px);
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid var(--bg);
@@ -1369,6 +1376,7 @@ ul {
   }
 
   .avatar-ring,
+  .avatar-ring::before,
   .avatar-ring::after {
     animation: none;
   }
@@ -1454,6 +1462,7 @@ ul {
     display: none;
   }
 
+  .avatar-ring::before,
   .avatar-ring::after {
     display: none;
   }
