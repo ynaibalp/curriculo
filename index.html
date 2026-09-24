@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículo de Plabiany Rodrigo Acosta — Engenheiro de IA Generativa, Machine Learning, Visão Computacional, Cientista de Dados e Deep Learning." />
+  <title>Plabiany Rodrigo Acosta — Currículo</title>
+  <link rel="icon" type="image/jpeg" href="assets/picture.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("plab-theme");
+        var d = t || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        document.documentElement.dataset.theme = d;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#sobre" data-i18n="skip">Pular para o conteúdo</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Plabiany Rodrigo Acosta">
+        <span class="brand-mark">PA.</span>
+        <span class="brand-name" data-i18n="brand">Plabiany Acosta</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Menu principal">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#formacao" data-i18n="nav.education">Formação</a>
+        <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+        <a href="#artigos" data-i18n="nav.articles">Artigos</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Idioma">
+          <button class="lang-btn is-active" id="langPt" type="button" aria-pressed="true">PT</button>
+          <button class="lang-btn" id="langEn" type="button" aria-pressed="false">EN</button>
+        </div>
+
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro" title="Tema claro/escuro">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+
+        <button class="icon-btn print-btn" id="printBtn" type="button" aria-label="Imprimir ou salvar como PDF" title="Imprimir / PDF">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Olá, eu sou</p>
+          <h1 class="hero-name">Plabiany Rodrigo Acosta</h1>
+          <ul class="hero-roles" id="heroRoles" aria-label="Cargos"></ul>
+          <p class="hero-tagline" data-i18n="hero.tagline">Cientista de Dados, Pesquisador e Engenheiro apaixonado por transformar dados e visão computacional em soluções reais.</p>
+
+          <div class="hero-contact" id="heroContact"></div>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#experiencia" data-i18n="hero.cta1">Ver minha trajetória</a>
+            <a class="btn btn-ghost" href="#contato" data-i18n="hero.cta2">Entrar em contato</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="avatar-ring">
+            <img src="assets/picture.jpeg" alt="Foto de Plabiany Rodrigo Acosta" width="400" height="400" />
+          </div>
+          <div class="avatar-orb" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="hero-stats" id="heroStats"></ul>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <h2 class="section-title" data-i18n="about.title">Sobre mim</h2>
+          <p class="section-sub" data-i18n="about.sub">Cientista de Dados · Pesquisador · Aprendizado Profundo e Visão Computacional</p>
+        </div>
+
+        <div class="about-card reveal">
+          <p class="about-text" id="aboutText"></p>
+          <div class="about-badges">
+            <span class="chip chip-accent">LLM <span class="chip-dot"></span> Deep Learning</span>
+            <span class="chip chip-accent">Computer Vision</span>
+            <span class="chip chip-accent">Data Science</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORMAÇÃO ================= -->
+    <section class="section" id="formacao">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02</span>
+          <h2 class="section-title" data-i18n="education.title">Formação</h2>
+          <p class="section-sub" data-i18n="education.sub">Graduação e pós-graduação em Ciência da Computação</p>
+        </div>
+
+        <div class="edu-grid" id="eduGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <h2 class="section-title" data-i18n="skills.title">Habilidades</h2>
+          <p class="section-sub" data-i18n="skills.sub">Stack de Inteligência Artificial, dados e desenvolvimento</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-ico">AI</span>
+              <h3 data-i18n="skills.ai.title">Inteligência Artificial &amp; LLMs</h3>
+            </div>
+            <ul class="skill-list" id="skillAi"></ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-ico">&lt;/&gt;</span>
+              <h3 data-i18n="skills.lang.title">Linguagens de Programação</h3>
+            </div>
+            <div class="skill-bars" id="skillLang"></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-ico">lib</span>
+              <h3 data-i18n="skills.lib.title">Bibliotecas &amp; Frameworks</h3>
+            </div>
+            <div class="chip-group" id="skillLib"></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-ico">☁</span>
+              <h3 data-i18n="skills.cloud.title">Cloud &amp; DevOps</h3>
+            </div>
+            <div class="chip-group" id="skillCloud"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIÊNCIA ================= -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">04</span>
+          <h2 class="section-title" data-i18n="experience.title">Experiência</h2>
+          <p class="section-sub" data-i18n="experience.sub">Mais de uma década aplicando tecnologia, dados e visão computacional</p>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ================= ARTIGOS ================= -->
+    <section class="section" id="artigos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">05</span>
+          <h2 class="section-title" data-i18n="articles.title">Publicações &amp; Artigos</h2>
+          <p class="section-sub" data-i18n="articles.sub">Pesquisas aceitas em revistas e conferências internacionais</p>
+        </div>
+
+        <div class="article-grid" id="articleGrid"></div>
+
+        <a class="lattes-card reveal" href="http://lattes.cnpq.br/6245960124365115" target="_blank" rel="noopener noreferrer">
+          <svg class="lattes-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></svg>
+          <span>
+            <strong data-i18n="articles.lattes.title">Currículo Lattes</strong>
+            <small>lattes.cnpq.br/6245960124365115</small>
+          </span>
+          <span class="btn btn-primary btn-sm" data-i18n="articles.lattes.cta">Acessar</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= IDIOMAS ================= -->
+    <section class="section" id="idiomas">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">06</span>
+          <h2 class="section-title" data-i18n="languages.title">Idiomas</h2>
+        </div>
+        <div class="lang-grid" id="langGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">07</span>
+          <h2 class="section-title" data-i18n="contact.title">Contato</h2>
+          <p class="section-sub" data-i18n="contact.sub">Vamos conversar sobre IA, visão computacional e dados.</p>
+        </div>
+
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><span data-i18n="footer.text">Currículo inspirado no PDF original · </span><strong>Plabiany Rodrigo Acosta</strong></p>
+      <a class="back-top" href="#top" aria-label="Voltar ao topo">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
